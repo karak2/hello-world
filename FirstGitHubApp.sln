@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstGitHubApp", "FirstGitHubApp\FirstGitHubApp.csproj", "{03F31737-C111-4923-9443-4ABE377E40EE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{F18AF2FF-F5EB-4032-8F75-E9DAEA5C4BDD}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03F31737-C111-4923-9443-4ABE377E40EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03F31737-C111-4923-9443-4ABE377E40EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03F31737-C111-4923-9443-4ABE377E40EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03F31737-C111-4923-9443-4ABE377E40EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F18AF2FF-F5EB-4032-8F75-E9DAEA5C4BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F18AF2FF-F5EB-4032-8F75-E9DAEA5C4BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F18AF2FF-F5EB-4032-8F75-E9DAEA5C4BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
