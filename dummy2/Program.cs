@@ -10,6 +10,8 @@ namespace dummy2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("ok");
+            Console.ReadKey();
         }
     }
 }
