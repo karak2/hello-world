@@ -7,6 +7,14 @@ using System.Text;
 namespace CarsBigDataService
 {
     [DataContract]
+    public class UserReviewSaveResult
+    {
+        [DataMember]
+        public string ErrorMessage { get; set; }
+    }
+
+
+    [DataContract]
     public class UserReview
     {
         protected bool Equals(UserReview other)

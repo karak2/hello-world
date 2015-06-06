@@ -1,4 +1,5 @@
 ﻿using System.ServiceModel;
+using System.ServiceModel.Web;
 
 namespace CarsBigDataService
 {
@@ -6,7 +7,9 @@ namespace CarsBigDataService
     public interface IUserReviewSaveService
     {
         [OperationContract]
-        void SaveReview(UserReview review);
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare,
+            UriTemplate = "savereview")]
+        UserReviewSaveResult SaveReview(UserReview review);
     }
 
 }

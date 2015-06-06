@@ -1,11 +1,21 @@
-﻿namespace CarsBigDataService
+﻿using System;
+
+namespace CarsBigDataService
 {
     public class UserReviewSaveService : IUserReviewSaveService
     {
 
-        public void SaveReview(UserReview review)
+        public UserReviewSaveResult SaveReview(UserReview review)
         {
-            MongoHelper.InsertUserReview(UserReviewAndBsonConverter.ToBsonDocument(review)); 
+            try
+            {
+                MongoHelper.InsertUserReview(UserReviewAndBsonConverter.ToBsonDocument(review)); 
+            }
+            catch (Exception exception)
+            {
+                return new UserReviewSaveResult() {ErrorMessage = exception.ToString()};
+            }
+            return new UserReviewSaveResult();
         }
     }
 }
