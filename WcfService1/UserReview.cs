@@ -92,7 +92,7 @@ namespace CarsBigDataService
         public int DrivenKms { get; set; }
 
         [DataMember]
-        int YearOfPurchase { get; set; }
+        public int YearOfPurchase { get; set; }
 
         [DataMember]
         public int Garage { get; set; }
