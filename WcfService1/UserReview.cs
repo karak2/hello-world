@@ -114,5 +114,8 @@ namespace CarsBigDataService
 
         [DataMember]
         public int Relyability { get; set; }
+
+        [DataMember]
+        public string IpAddress { get; set; }
     }
 }
