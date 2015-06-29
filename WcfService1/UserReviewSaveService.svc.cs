@@ -12,6 +12,7 @@ namespace CarsBigDataService
             try
             {
                 review.IpAddress = _GetIp();
+                review.ServiceReceivedDateTime = DateTime.UtcNow;
                 MongoHelper.InsertUserReview(UserReviewAndBsonConverter.ToBsonDocument(review)); 
             }
             catch (Exception exception)

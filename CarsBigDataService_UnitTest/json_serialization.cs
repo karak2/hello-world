@@ -27,6 +27,7 @@ namespace CarsBigDataService_UnitTest
             review.Verdict= 4;
             review.YearOfManufacturing = 3;
             review.YearOfManufacturing = 2;
+            review.ServiceReceivedDateTime = DateTime.UtcNow;
 
             var serialzer = new DataContractJsonSerializer(typeof (UserReview));
             MemoryStream stream = new MemoryStream();

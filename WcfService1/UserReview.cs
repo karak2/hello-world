@@ -116,6 +116,9 @@ namespace CarsBigDataService
         public int Relyability { get; set; }
 
         [DataMember]
-        public string IpAddress { get; set; }
+        internal string IpAddress { get; set; }
+
+        [DataMember]
+        internal DateTime ServiceReceivedDateTime { get; set; }
     }
 }
